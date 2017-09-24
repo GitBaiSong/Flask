@@ -1,0 +1,85 @@
+.content{
+    width:100%;
+    height: 600px;
+    text-align: center;
+    /*background-color: #000;*/
+}
+
+.content .text{
+    height: 100px;
+    width: 100%;
+    /*background-color: red;*/
+}
+.content .text h3{
+    font-size:27px;
+    color: black;
+    line-height: 100px;
+}
+
+.content .photos{
+    height: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.content .photos ul{
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.content .photos ul li{
+
+    display: inline-block;
+    width: 220px;
+    height: 160px;
+    margin: 10px;
+    position: relative;
+
+}
+.content .photos ul li div{
+    background-image: url(../img/1.png);
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    border-radius: 5px;
+}
+.content .photos ul li div:hover{
+    border-bottom:2px solid #bebebe;
+    border-right:2px solid #bebebe;
+
+}
+
+.content .photos ul li p{
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 13px;
+}
+.content .more{
+    border:1px solid black;
+    border-radius: 5px;
+    width:130px;
+    height: 60px;
+    line-height:60px;
+    font-size:20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+.content .more:hover{
+    border:1px solid #ccc;
+    background-color: black;
+    transition: background-color 1s;
+}
+
+.content .more a:hover{
+    color: white;
+}

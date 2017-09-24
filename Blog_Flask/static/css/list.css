@@ -1,0 +1,118 @@
+.lists{
+    width:70%;
+    height: 100%;
+    margin: 0 auto;
+}
+.lists .article{
+    height:190px;
+    width:100%;
+    margin-top: 80px;
+    /*background-color: blue;*/
+}
+.lists .list{
+    width:80%;
+    height:190px;
+
+    float: right;
+}
+.lists .list .title{
+    height: 50px;
+    width: 100%;
+    /*background-color: red;*/
+    box-sizing: border-box;
+}
+.lists .list .title h3{
+    color: black;
+    font-size:20px;
+    font-weight:bold;
+}
+.lists .list .title p{
+    color: rgb(51,51,51);
+    font-size:12px;
+    padding-top:5px;
+}
+.lists .list .title p span{
+    padding-left:20px;
+}
+.lists .list .content{
+    width:100%;
+    height:110px;
+    /*background-color: yellow;*/
+    box-sizing: border-box;
+}
+.lists .list .content p{
+    color: rgb(51,51,51);
+    font-size:13px;
+    padding-top:12px;
+    height:70px;
+}
+.lists .list .content a{
+    width:70px;
+    height:20px;
+    border:1px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height:20px;
+    color: black;
+    font-size:12px;
+    margin-top: 8px;
+    bottom: 5px;
+}
+.lists .list .content a:hover{
+    background-color: black;
+    color: #fff;
+    transition: background-color 1s;
+}
+
+.lists .list .tag{
+    width:100%;
+    height:30px;
+    /*background-color: green;*/
+    border-bottom:1px solid #ccc;
+}
+.lists .list .tag a{
+    display: inline-block;
+    width:70px;
+    height:100%;
+    line-height:30px;
+    color: rgb(51,51,51);
+    font-size:13px;
+    text-align: center;
+}
+.lists .list .tag a:hover{
+    color: black;
+}
+.lists .date{
+    width:20%;
+    height:60px;
+    float: left;
+    /*background-color: palevioletred;*/
+    text-align: center;
+    box-sizing: border-box;
+}
+.lists .date .day{
+    display: block;
+    color: black;
+    font-size:20px;
+    font-weight:bold;
+    height:30px;
+    width:80px;
+    /*background-color: #fff;*/
+    line-height:30px;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+.lists .date .month{
+    display: block;
+    color: rgb(51,51,51);
+    font-size:14px;
+    /*background-color: #000;*/
+    width: 80px;
+    height:30px;
+    line-height:30px;
+    margin:0 auto;
+    border-top:1px solid red;
+    box-sizing: border-box;
+}

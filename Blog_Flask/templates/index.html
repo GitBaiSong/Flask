@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog|白啸松</title>
-    <link rel="stylesheet" href="../static/css/base.css">
-    <link rel="stylesheet" href="../static/css/layout.css">
-    <link rel="stylesheet" href="../static/css/content.css">
-
-</head>
-<body>
-    <div class="content">
+<% extends "layout.html" %>
+<% block title %>主页<% endblock %>
+{% block login %}{% endblock %}
+<% block content %>
+<div class="content">
         <div class="text">
             <h3>近期文章</h3>
         </div>
@@ -69,4 +62,4 @@
             </div>
         </div>
     </div>
-</body>
+<% endblock %>

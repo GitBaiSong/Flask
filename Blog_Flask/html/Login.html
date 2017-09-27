@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog|白啸松</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/layout.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <!--顶部区域-->
+    <div class="top">
+        <div class="info">
+            <h1><a href="index.html">白啸松的博客</a></h1>
+            <p>生活点滴</p>
+        </div>
+    </div>
+    <!--图片区域-->
+    <div class="banner">
+        <div class="text">
+            <div class="info">
+                <h3>人生是一场永不停息的奔跑</h3>
+                <h4>每一天，期待遇见更好的自己</h4>
+            </div>
+
+        </div>
+        <!--登录区域-->
+        <div class="login-register">
+            <div class="header">
+                <!--<a href="" class="alogin""><span>登录</span></a>-->
+                <!--<a href="" class="aregister" "><span>登录</span></a>-->
+                <span class="alogin"> 登录</span>
+                <span class="aregister" >注册</span>
+            </div>
+            <div class="form-login">
+                <form action="" method="post">
+                    <div class="name">
+                        <span></span><input type="text" placeholder="Username" name="username">
+                    </div>
+                    <div class="pwd">
+                        <span></span><input type="password" placeholder="Password" name="password">
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" value="true" checked="checked"><span>记住我</span>
+                    </div>
+                    <div class="forget">
+                        <a href="">忘记密码？</a>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="登 录">
+                    </div>
+                </form>
+            </div>
+            <div class="form-register">
+                <form action="" method="post">
+                    <div class="name-info">
+                        <span>用户名：</span><input type="text" placeholder="请设置用户名" name="username">
+                    </div>
+                    <div class="pwd-info">
+                        <span>密  码：</span><input type="text" placeholder="请设置登录密码" name="password">
+                    </div>
+                    <div class="phone-info">
+                        <span>手机号：</span><input type="text" placeholder="请设置手机号码" name="phone">
+                    </div>
+                    <div class="email-info">
+                        <span>邮  箱：</span><input type="text" placeholder="请设置邮箱" name="email">
+                    </div>
+                    <div class="auth-code">
+                        <span>验证码：</span><input type="text"  name="auth-code">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="注 册">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--注册区域-->
+    </div>
+    <!--底部区域-->
+    <div class="footer">
+        <div class="text">
+            <p>© Copyright 2017 by 白松</p>
+            <p>
+                <a href="index.html">主 页 |</a>
+                <a href="list.html"> 文 章 |</a>
+                <a href=""> 留言板 |</a>
+                <a href=""> 关于我</a>
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+$(document).ready(function () {
+    $('.aregister').click(function () {
+        $('.form-login').css("display","none");
+        $('.form-register').css("display","inherit");
+        $('.aregister').css("border-bottom","2px solid #fff")
+        $('.alogin').css("border-bottom","none")
+    });
+    $('.alogin').click(function () {
+        $('.form-login').css("display","inherit");
+        $('.form-register').css("display","none");
+        $('.alogin').css("border-bottom","2px solid #fff")
+        $('.aregister').css("border-bottom","none")
+    });
+})
+</script>
+</html>

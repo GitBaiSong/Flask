@@ -1,0 +1,204 @@
+.banner {
+    position: relative;
+}
+.banner .login-register{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    left: 80%;
+    transform:translate(-50%,-100%);
+    z-index: 10;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.banner .login-register .header{
+    width:100%;
+    height:50px;
+    background-color: black;
+          /* for IE */
+    filter:alpha(opacity=80);
+      /* CSS3 standard */
+    opacity:0.8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+}
+.banner .login-register .header a:nth-child(1){
+    color: #FFFFFF;
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 50px;
+    font-size:20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid #fff;
+}
+/*.banner .login-register .header span:nth-child(1){*/
+    /*color: #FFFFFF;*/
+    /*width: 50%;*/
+    /*height: 100%;*/
+    /*float: left;*/
+    /*line-height: 50px;*/
+    /*font-size:20px;*/
+    /*text-align: center;*/
+    /*box-sizing: border-box;*/
+    /*border-bottom: 2px solid #fff;*/
+
+/*}*/
+/*.banner .login-register .header span:nth-child(1):hover{*/
+    /*cursor:pointer;*/
+/*}*/
+/*.banner .login-register .header a:nth-child(1):hover{*/
+    /*border-bottom:2px solid #fff;*/
+/*}*/
+
+.banner .login-register .header a:nth-child(2){
+    color: #FFFFFF;
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 50px;
+    font-size:20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/*.banner .login-register .header span:nth-child(2){*/
+    /*color: #FFFFFF;*/
+    /*width: 50%;*/
+    /*height: 100%;*/
+    /*float: left;*/
+    /*line-height: 50px;*/
+    /*font-size:20px;*/
+    /*text-align: center;*/
+    /*box-sizing: border-box;*/
+/*}*/
+/*.banner .login-register .header span:nth-child(2):hover{*/
+    /*cursor:pointer;*/
+/*}*/
+/*.banner .login-register .header a:nth-child(2):hover{*/
+    /*border-bottom:2px solid #fff;*/
+/*}*/
+
+.banner .login-register .form-login{
+    width:100%;
+    height:350px;
+    background-color: black;
+    /* for IE */
+    filter:alpha(opacity=50);
+    /* CSS3 standard */
+    opacity:0.5;
+    padding-top:50px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: inherit;
+
+}
+
+.banner .login-register .form-login .name{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.banner .login-register .form-login .name span{
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    width:40px;
+    height: 50px;
+    background-image: url(../img/user.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:20px;
+}
+.banner .login-register .form-login .name input{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: black;
+    color: #FFFFFF;
+    border: 2px solid white;
+}
+
+.banner .login-register .form-login .pwd{
+    width: 100%;
+    height: 50px;
+}
+.banner .login-register .form-login .pwd span{
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    width:40px;
+    height: 50px;
+    background-image: url(../img/pwd.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:20px;
+}
+.banner .login-register .form-login .pwd input{
+    width: 100%;
+    height: 50px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    color: #FFFFFF;
+    border:2px solid white;
+    border-top: 0px;
+}
+.banner .login-register .form-login .remember{
+    width:50%;
+    height: 50px;
+    float: left;
+    margin-top: 20px;
+    line-height:50px;
+}
+.banner .login-register .form-login .remember input{
+    width:20px;
+    height: 20px;
+    transform: translate(50%,25%);
+}
+.banner .login-register .form-login .remember span{
+    padding-left: 20px;
+    color: #FFFFFF;
+}
+
+.banner .login-register .form-login .forget{
+    width:50%;
+    display: inherit;
+    height: 50px;
+    float: right;
+    margin-top: 20px;
+    line-height:50px;
+    text-align: right;
+}
+.banner .login-register .form-login .forget a{
+    color: #FFFFFF;
+    padding-right: 10px;
+}
+.banner .login-register .form-login .submit{
+    width: 100%;
+    height: 50px;
+}
+
+
+.banner .login-register .form-login .submit input{
+    color: #FFFFFF;
+    width:100%;
+    height:50px;
+    background-color: black;
+    font-size:20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.banner .login-register .form-login .submit input:hover{
+    cursor: pointer;
+}

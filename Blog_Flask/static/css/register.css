@@ -1,0 +1,244 @@
+.banner {
+    position: relative;
+}
+.banner .login-register{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    left: 80%;
+    transform:translate(-50%,-100%);
+    z-index: 10;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.banner .login-register .header{
+    width:100%;
+    height:50px;
+    background-color: black;
+    /* for IE */
+    filter:alpha(opacity=80);
+    /* CSS3 standard */
+    opacity:0.8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+}
+.banner .login-register .header a:nth-child(1){
+    color: #FFFFFF;
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 50px;
+    font-size:20px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+/*.banner .login-register .header span:nth-child(1){*/
+    /*color: #FFFFFF;*/
+    /*width: 50%;*/
+    /*height: 100%;*/
+    /*float: left;*/
+    /*line-height: 50px;*/
+    /*font-size:20px;*/
+    /*text-align: center;*/
+    /*box-sizing: border-box;*/
+    /*border-bottom: 2px solid #fff;*/
+
+/*}*/
+/*.banner .login-register .header span:nth-child(1):hover{*/
+    /*cursor:pointer;*/
+/*}*/
+/*.banner .login-register .header a:nth-child(1):hover{*/
+    /*border-bottom:2px solid #fff;*/
+/*}*/
+
+.banner .login-register .header a:nth-child(2){
+    color: #FFFFFF;
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 50px;
+    font-size:20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid #fff;
+}
+/*.banner .login-register .header span:nth-child(2){*/
+    /*color: #FFFFFF;*/
+    /*width: 50%;*/
+    /*height: 100%;*/
+    /*float: left;*/
+    /*line-height: 50px;*/
+    /*font-size:20px;*/
+    /*text-align: center;*/
+    /*box-sizing: border-box;*/
+/*}*/
+/*.banner .login-register .header span:nth-child(2):hover{*/
+    /*cursor:pointer;*/
+/*}*/
+/*.banner .login-register .header a:nth-child(2):hover{*/
+    /*border-bottom:2px solid #fff;*/
+/*}*/
+.banner .login-register .form-register {
+    width:100%;
+    height:350px;
+    background-color: black;
+    /* for IE */
+    filter:alpha(opacity=50);
+    /* CSS3 standard */
+    opacity:0.5;
+    padding-top:10px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: inherit;
+}
+
+.banner .login-register .form-register .name-info{
+    width: 100%;
+    height: 40px;
+
+}
+.banner .login-register .form-register .name-info span{
+    display: inline-block;
+    width:80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size:17px;
+}
+.banner .login-register .form-register .name-info input{
+    display: inline-block;
+    width: 260px;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: black;
+    color: #FFFFFF;
+    border: 2px solid white;
+}
+.banner .login-register .form-register .pwd-info{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+.banner .login-register .form-register .pwd-info span{
+    display: inline-block;
+    width:80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size:17px;
+}
+.banner .login-register .form-register .pwd-info input{
+    display: inline-block;
+    width: 260px;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: black;
+    color: #FFFFFF;
+    border: 2px solid white;
+}
+.banner .login-register .form-register .phone-info{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+.banner .login-register .form-register .phone-info span{
+    display: inline-block;
+    width:80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size:17px;
+}
+.banner .login-register .form-register .phone-info input{
+    display: inline-block;
+    width: 260px;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: black;
+    color: #FFFFFF;
+    border: 2px solid white;
+}
+.banner .login-register .form-register .email-info{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+.banner .login-register .form-register .email-info span{
+    display: inline-block;
+    width:80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size:17px;
+}
+.banner .login-register .form-register .email-info input{
+    display: inline-block;
+    width: 260px;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: black;
+    color: #FFFFFF;
+    border: 2px solid white;
+
+}
+.banner .login-register .form-register .auth-code{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+.banner .login-register .form-register .auth-code span{
+    display: inline-block;
+    width:80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size:17px;
+}
+.banner .login-register .form-register .auth-code input{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: black;
+    color: #FFFFFF;
+    border: 2px solid white;
+}
+
+.banner .login-register .form-register .submit{
+    width: 100%;
+    height: 50px;
+}
+
+
+.banner .login-register .form-register .submit input{
+    color: #FFFFFF;
+    width:100%;
+    height:50px;
+    background-color: black;
+    font-size:20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.banner .login-register .form-register .submit input:hover{
+    cursor: pointer;
+}

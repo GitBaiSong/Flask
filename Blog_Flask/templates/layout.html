@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock %}|白啸松</title>
     <link rel="stylesheet" href="{{url_for('static',filename='css/base.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/layout.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/list.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/article.css')}}">
+    {% block css%}{% endblock %}
 </head>
 <body>
     <!--顶部区域-->
     <div class="top">
         <div class="info">
-            <h1><a href="{{url_for['index']}}">白啸松的博客</a></h1>
+            <h1><a href="{{url_for('index')}}">白啸松的博客</a></h1>
             <p>生活点滴</p>
+        </div>
+        <div class="login_regs_newblog_button">
+            <ul>
+                <li><a href="{{url_for('register')}}">注  册</a></li>
+                <li><a href="{{url_for('login')}}">登  录</a></li>
+                <li><a href="{{url_for('ManageArticle')}}">写文章</a></li>
+            </ul>
         </div>
         <div class="nav">
             <ul>
-                <li><a href="{{url_for['index']}}">主 页</a></li>
-                <li><a href="{{url_for['list']}}">文 章</a></li>
+                <li><a href="{{url_for('index')}}">主 页</a></li>
+                <li><a href="{{url_for('list')}}">文 章</a></li>
                 <li><a href="">留言板</a></li>
                 <li><a href="">关于我</a></li>
             </ul>
@@ -33,8 +37,8 @@
                 <h3>人生是一场永不停息的奔跑</h3>
                 <h4>每一天，期待遇见更好的自己</h4>
             </div>
-            {% block login %}{% endblock %}
         </div>
+        {% block login %}{% endblock %}
     </div>
     {% block content %}{% endblock %}
     <!--底部区域-->
@@ -42,12 +46,13 @@
         <div class="text">
             <p>© Copyright 2017 by 白松</p>
             <p>
-                <a href="{{url_for['index']}}">主 页 |</a>
-                <a href="{{url_for['list']}}"> 文 章 |</a>
+                <a href="{{url_for('index')}}">主 页 |</a>
+                <a href="{{url_for('list')}}"> 文 章 |</a>
                 <a href=""> 留言板 |</a>
                 <a href=""> 关于我</a>
             </p>
         </div>
     </div>
 </body>
+{% block js %}{% endblock %}
 </html>

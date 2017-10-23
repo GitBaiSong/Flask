@@ -1,6 +1,9 @@
-<% extends "layout.html" %>
-<% block title %>主页<% endblock %>
-<% block content %>
+{% extends "layout.html" %}
+{% block title %}主页{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+{% block content %}
 <div class="content">
         <div class="text">
             <h3>近期文章</h3>
@@ -61,4 +64,4 @@
             </div>
         </div>
     </div>
-<% endblock %>
+{% endblock %}

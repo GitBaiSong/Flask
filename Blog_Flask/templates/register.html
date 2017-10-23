@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'layout.html'%}
+{% block title%}注册{% endblock%}
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/register.css')}}">{% endblock%}
+{% block login%}
+        <div class="login-register">
+            <div class="header">
+                <a href="{{url_for('login')}}" class="alogin"><span>登录</span></a>
+                <a href="{{url_for('register')}}" class="aregister"><span>注册</span></a>
+                <!--<span class="alogin"> 登录</span>-->
+                <!--<span class="aregister" >注册</span>-->
+            </div>
+            <div class="form-register">
+                <form action="" method="post">
+                    <div class="name-info">
+                        <span>用户名：</span><input type="text" placeholder="请设置用户名" name="username">
+                    </div>
+                    <div class="pwd-info">
+                        <span>密  码：</span><input type="text" placeholder="请设置登录密码" name="password">
+                    </div>
+                    <div class="phone-info">
+                        <span>手机号：</span><input type="text" placeholder="请设置手机号码" name="phone">
+                    </div>
+                    <div class="email-info">
+                        <span>邮  箱：</span><input type="text" placeholder="请设置邮箱" name="email">
+                    </div>
+                    <div class="auth-code">
+                        <span>验证码：</span><input type="text"  name="auth-code">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="注 册">
+                    </div>
+                </form>
+            </div>
+        </div>
+{% endblock%}}

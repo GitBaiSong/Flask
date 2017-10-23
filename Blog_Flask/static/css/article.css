@@ -1,0 +1,176 @@
+.article{
+    width:60%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.article .title{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: left;
+    color: #000;
+    font-size:40px;
+    border-bottom: 1px solid red;
+}
+.article .article-info{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    color: #000;
+}
+.article .article-info .author{
+    display: inline-block;
+}
+.article .article-info .author span{
+    display: inline-block;
+    padding-left: 50px;
+}
+.article .article-info .tag{
+    display: inline-block;
+    padding-left: 40px;
+}
+.article .article-info .tag span:nth-child(1){
+    display: inline-block;
+}
+
+.article .article-info .date{
+    display: inline-block;
+    padding-left: 40px;
+}
+.article .article-info .date .day{
+    display: inline-block;
+}
+.article .content{
+    margin-top: 30px;
+}
+.article .content p{
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid ;
+}
+
+.comment {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.comment .desc p:nth-child(1){
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #000;
+}
+.comment .desc p:nth-child(2){
+    color: #0c0c0c;
+    padding-bottom: 10px;
+}
+.comment .desc p:nth-child(2) span{
+    color: red;
+    font-weight: bold;
+}
+
+
+.comment .comment-content{
+    padding-bottom: 10px;
+}
+.comment .comment-content p{
+    padding-bottom: 3px;
+}
+.comment .comment-content textarea{
+    padding: 10px;
+    line-height: 1.5;
+    overflow: auto;
+}
+
+.comment .comment-user-name{
+    padding-bottom: 10px;
+    width: 45%;
+}
+.comment .comment-user-name p{
+    padding-bottom: 3px;
+}
+
+.comment .comment-user-name input{
+    width: 50%;
+    border-radius: 3px;
+    font-size: 15px;
+    height: 30px;
+    padding-left: 10px;
+
+}
+.comment .comment-user-name span{
+    color: red;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.comment .comment-user-email{
+    padding-bottom: 10px;
+    width: 45%;
+}
+.comment .comment-user-email p{
+    padding-bottom: 3px;
+}
+
+.comment .comment-user-email input{
+    width: 50%;
+    border-radius: 3px;
+    font-size: 15px;
+    height: 30px;
+    padding-left: 10px;
+
+}
+.comment .comment-user-email span{
+    color: red;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.comment .comment-auth-code{
+    padding-bottom: 10px;
+    width: 45%;
+}
+.comment .comment-auth-code p{
+    padding-bottom: 3px;
+}
+
+.comment .comment-auth-code input{
+    width: 20%;
+    border-radius: 3px;
+    font-size: 15px;
+    height: 30px;
+    padding-left: 10px;
+
+}
+.comment .comment-auth-code span{
+    color: red;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.comment .comment-sumbit{
+    width: 50%;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.comment .comment-sumbit input{
+    width: 50%;
+    height: 40px;
+    color: #000;
+    border:1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    line-height: 40px;
+}
+.comment .comment-sumbit input:hover{
+    border:1px solid #fff;
+    color: #fff;
+    background-color: #000;
+    transition: background-color .5s;
+
+}

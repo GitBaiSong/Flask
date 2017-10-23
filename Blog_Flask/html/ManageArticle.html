@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog|白啸松</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/layout.css">
+    <link rel="stylesheet" href="../static/css/article.css">
+    <link rel="stylesheet" href="../static/css/ManageArticle.css">
+    <script src="../static/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+    <!--顶部区域-->
+    <div class="top">
+        <div class="info">
+            <h1><a href="index.html">白啸松的博客</a></h1>
+            <p>生活点滴</p>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">主 页</a></li>
+                <li><a href="list.html">文 章</a></li>
+                <li><a href="">留言板</a></li>
+                <li><a href="">关于我</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--图片区域-->
+    <div class="banner">
+        <div class="text">
+            <div class="info">
+                <h3>人生是一场永不停息的奔跑</h3>
+                <h4>每一天，期待遇见更好的自己</h4>
+            </div>
+
+        </div>
+    </div>
+    <!--文章区域-->
+     <div class="edit">
+        <div class="header">
+            <h2>新增文章</h2>
+        </div>
+        <div class="form_AddArticle">
+            <form action="" method="post">
+                <div class="title">
+                    <span>标题</span>
+                    <input type="text" name="" id="" placeholder="请输入标题">
+                </div>
+                <div class="content">
+                    <span class="content_title">内容</span>
+                    <div id="editor" class="ckeditor">
+                        <textarea name=""></textarea>
+                    </div>
+                </div>
+                
+                <div class="label">
+                    <span>标签</span>
+                    <input type="text" list="label">
+                    <datalist id="label">
+                        <option>Python</option>
+                        <option>网络</option>
+                        <option>安全</option>
+                    </datalist>
+                </div>
+
+                <div class="submit">
+                    <input type="button" value="提交">
+                </div>
+            </form>
+        </div>
+    </div>   
+
+    <!--底部区域-->
+    <div class="footer">
+        <div class="text">
+            <p>© Copyright 2017 by 白松</p>
+            <p>
+                <a href="index.html">主 页 |</a>
+                <a href="list.html"> 文 章 |</a>
+                <a href=""> 留言板 |</a>
+                <a href=""> 关于我</a>
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    // 用CKEditor替换<textarea id="editor1">
+    // 使用默认配置
+    CKEDITOR.replace('editor');
+</script>
+</html>

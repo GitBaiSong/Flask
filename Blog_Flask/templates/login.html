@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'layout.html'%}
+{% block title%}登录{% endblock%}
+{% block css %} <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">{% endblock %}
+{% block login%}
+    <div class="login-register">
+            <div class="header">
+                <a href="{{url_for('login')}}" class="alogin"><span>登录</span></a>
+                <a href="{{url_for('register')}}" class="aregister"><span>注册</span></a>
+                <!--<span class="alogin"> 登录</span>-->
+                <!--<span class="aregister" >注册</span>-->
+            </div>
+            <div class="form-login">
+                <form action="" method="post">
+                    <div class="name">
+                        <span></span><input type="text" placeholder="Username" name="username">
+                    </div>
+                    <div class="pwd">
+                        <span></span><input type="password" placeholder="Password" name="password">
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" value="true" checked="checked"><span>记住我</span>
+                    </div>
+                    <div class="forget">
+                        <a href="">忘记密码？</a>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="登 录">
+                    </div>
+                </form>
+            </div>
+        </div>
+{% endblock%}}

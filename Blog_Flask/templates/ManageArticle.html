@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block title %}新增文章{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/ManageArticle.css')}}">
+<script src="{{url_for('static',filename='ckeditor/ckeditor.js')}}"></script>
+{% endblock %}
+{% block content %}
+    <div class="edit">
+        <div class="header">
+            <h2>新增文章</h2>
+        </div>
+        <div class="form_AddArticle">
+            <form action="" method="post">
+                <div class="title">
+                    <span>标题</span>
+                    <input type="text" name="title" id="" placeholder="请输入标题">
+                </div>
+                <div class="content">
+                    <span class="content_title">内容</span>
+                    <textarea name="content" id="editor" class="ckeditor"></textarea>
+                </div>
+                
+                <div class="label">
+                    <span>标签</span>
+                    <input type="text" list="label" name="label">
+                    <datalist id="label">
+                        <option>Python</option>
+                        <option>网络</option>
+                        <option>安全</option>
+                    </datalist>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="提交">
+                </div>
+            </form>
+        </div>
+    </div> 
+
+{% endblock %}
+
+{% block js%} 
+<script>
+    // 用CKEditor替换<textarea id="editor1">
+    // 使用默认配置
+    CKEDITOR.replace('editor');
+</script>
+{% endblock %}

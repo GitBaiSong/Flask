@@ -6,6 +6,7 @@ from flask import *
 warnings.filterwarnings("ignore")
 import pymysql
 import pymysql.cursors
+from config import *
 import time
 
 app = Flask(__name__)

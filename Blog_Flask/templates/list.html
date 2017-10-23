@@ -1,40 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog|白啸松</title>
-    <link rel="stylesheet" href="../static/css/base.css">
-    <link rel="stylesheet" href="../static/css/layout.css">
-    <link rel="stylesheet" href="../static/css/list.css">
-
-</head>
-<body>
-    <!--顶部区域-->
-    <div class="top">
-        <div class="info">
-            <h1><a href="layout.html">白啸松的博客</a></h1>
-            <p>生活点滴</p>
-        </div>
-        <div class="nav">
-            <ul>
-                <li><a href="layout.html">主 页</a></li>
-                <li><a href="list.html">文 章</a></li>
-                <li><a href="">留言板</a></li>
-                <li><a href="">关于我</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--图片区域-->
-    <div class="banner">
-        <div class="text">
-            <div class="info">
-                <h3>人生是一场永不停息的奔跑</h3>
-                <h4>每一天，期待遇上更好的自己</h4>
-            </div>
-
-        </div>
-    </div>
-    <!--文章列表区域-->
+{% extends 'layout.html'%}
+{% block title%}文章列表{% endblock%}
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/list.css')}}">
+{% endblock %}
+{% block content%}
+<!--文章列表区域-->
     <div class="lists">
         <div class="article">
             <div class="list">
@@ -147,17 +117,6 @@
             </div>
         </div>
     </div>
-    <!--底部区域-->
-    <div class="footer">
-        <div class="text">
-            <p>© Copyright 2017 by 白松</p>
-            <p>
-                <a href="layout.html">主 页 |</a>
-                <a href="list.html"> 文 章 |</a>
-                <a href=""> 留言板 |</a>
-                <a href=""> 关于我</a>
-            </p>
-        </div>
-    </div>
-</body>
-</html>
+{% endblock%}
+
+

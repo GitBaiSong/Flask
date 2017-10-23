@@ -1,0 +1,119 @@
+.edit{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.edit .header{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.edit .header h2{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.edit .form_AddArticle{
+    width: 100%;
+}
+
+.edit .form_AddArticle .title{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+}
+.edit .form_AddArticle .title span{
+    display: block;
+    color: black;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 10px;
+}
+.edit .form_AddArticle .title input{
+    display: block;
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 3px;
+    letter-spacing: 1.5px;
+    padding-left: 10px;
+}
+
+.edit .form_AddArticle .content{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.edit .form_AddArticle .content .content_title{
+    display: block;
+    color: black;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 10px;
+    box-sizing: border-box;
+}
+
+.edit .form_AddArticle .label{
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.edit .form_AddArticle .label span{
+    display: block;
+    color: black;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 10px;
+}
+
+.edit .form_AddArticle .label input{
+    display: block;
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 3px;
+    letter-spacing: 1.2px;
+    padding-left: 10px;
+}
+
+.edit .form_AddArticle .submit{
+    width:100%;
+    height:50px;
+}
+
+.edit .form_AddArticle .submit input{
+    color: black;
+    width:100%;
+    height:50px;
+    background-color: white;
+    font-size:18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-top: 20px;
+    letter-spacing: 20px;
+}
+
+.edit .form_AddArticle .submit input:hover{
+    background-color: black;
+    color: #fff;
+    border: 1px solid #000;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
